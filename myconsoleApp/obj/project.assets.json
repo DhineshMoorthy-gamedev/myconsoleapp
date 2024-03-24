@@ -303,6 +303,19 @@
           }
         }
       },
+      "SharpZipLib/1.4.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/ICSharpCode.SharpZipLib.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/ICSharpCode.SharpZipLib.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Spectre.Console/0.48.0": {
         "type": "package",
         "dependencies": {
@@ -1583,6 +1596,27 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "SharpZipLib/1.4.2": {
+      "sha512": "yjj+3zgz8zgXpiiC3ZdF/iyTBbz2fFvMxZFEBPUcwZjIvXOf37Ylm+K58hqMfIBt5JgU/Z2uoUS67JmTLe973A==",
+      "type": "package",
+      "path": "sharpziplib/1.4.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/sharpziplib-nuget-256x256.png",
+        "lib/net6.0/ICSharpCode.SharpZipLib.dll",
+        "lib/net6.0/ICSharpCode.SharpZipLib.pdb",
+        "lib/net6.0/ICSharpCode.SharpZipLib.xml",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.pdb",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.xml",
+        "lib/netstandard2.1/ICSharpCode.SharpZipLib.dll",
+        "lib/netstandard2.1/ICSharpCode.SharpZipLib.pdb",
+        "lib/netstandard2.1/ICSharpCode.SharpZipLib.xml",
+        "sharpziplib.1.4.2.nupkg.sha512",
+        "sharpziplib.nuspec"
       ]
     },
     "Spectre.Console/0.48.0": {
@@ -4197,6 +4231,7 @@
       "ConsoleTables >= 2.6.1",
       "MySql.Data >= 8.3.0",
       "Newtonsoft.Json >= 13.0.3",
+      "SharpZipLib >= 1.4.2",
       "Spectre.Console >= 0.48.0",
       "Spectre.Console.Cli >= 0.48.0",
       "System.Data.SqlClient >= 4.8.6"
@@ -4208,11 +4243,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DOT_NET\\myconsoleApp\\myconsoleApp.csproj",
+      "projectUniqueName": "D:\\DOT_NET\\github\\myconsoleapp\\myconsoleApp\\myconsoleApp.csproj",
       "projectName": "myconsoleApp",
-      "projectPath": "D:\\DOT_NET\\myconsoleApp\\myconsoleApp.csproj",
+      "projectPath": "D:\\DOT_NET\\github\\myconsoleapp\\myconsoleApp\\myconsoleApp.csproj",
       "packagesPath": "C:\\Users\\DHINESH\\.nuget\\packages\\",
-      "outputPath": "D:\\DOT_NET\\myconsoleApp\\obj\\",
+      "outputPath": "D:\\DOT_NET\\github\\myconsoleapp\\myconsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DHINESH\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4261,6 +4296,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
+          },
+          "SharpZipLib": {
+            "target": "Package",
+            "version": "[1.4.2, )"
           },
           "Spectre.Console": {
             "target": "Package",

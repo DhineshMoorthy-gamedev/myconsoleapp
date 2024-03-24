@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DOT_NET\\myconsoleApp\\myconsoleApp.csproj": {}
+    "D:\\DOT_NET\\github\\myconsoleapp\\myconsoleApp\\myconsoleApp.csproj": {}
   },
   "projects": {
-    "D:\\DOT_NET\\myconsoleApp\\myconsoleApp.csproj": {
+    "D:\\DOT_NET\\github\\myconsoleapp\\myconsoleApp\\myconsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DOT_NET\\myconsoleApp\\myconsoleApp.csproj",
+        "projectUniqueName": "D:\\DOT_NET\\github\\myconsoleapp\\myconsoleApp\\myconsoleApp.csproj",
         "projectName": "myconsoleApp",
-        "projectPath": "D:\\DOT_NET\\myconsoleApp\\myconsoleApp.csproj",
+        "projectPath": "D:\\DOT_NET\\github\\myconsoleapp\\myconsoleApp\\myconsoleApp.csproj",
         "packagesPath": "C:\\Users\\DHINESH\\.nuget\\packages\\",
-        "outputPath": "D:\\DOT_NET\\myconsoleApp\\obj\\",
+        "outputPath": "D:\\DOT_NET\\github\\myconsoleapp\\myconsoleApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DHINESH\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,6 +60,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "SharpZipLib": {
+              "target": "Package",
+              "version": "[1.4.2, )"
             },
             "Spectre.Console": {
               "target": "Package",

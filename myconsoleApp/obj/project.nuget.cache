@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ANNdpPNubihyfkoeXB7pSa9HZJa9n2PqhOqlleu386IwGEbLTRQH0WXhJsagXbtogzP24vRryanWyqJ1tFMQgw==",
+  "dgSpecHash": "Z8Uk1zV1F727SKDYZRlHpLsuDBXQyasAptHVb4NCKR28sMiItk3GF8TrvhxppSGYmCd0a/B/zMoYeE17ZrvdRg==",
   "success": true,
-  "projectFilePath": "D:\\DOT_NET\\myconsoleApp\\myconsoleApp.csproj",
+  "projectFilePath": "D:\\DOT_NET\\github\\myconsoleapp\\myconsoleApp\\myconsoleApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DHINESH\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\DHINESH\\.nuget\\packages\\colorful.console\\1.2.15\\colorful.console.1.2.15.nupkg.sha512",
@@ -22,6 +22,7 @@
     "C:\\Users\\DHINESH\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\DHINESH\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\DHINESH\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\DHINESH\\.nuget\\packages\\sharpziplib\\1.4.2\\sharpziplib.1.4.2.nupkg.sha512",
     "C:\\Users\\DHINESH\\.nuget\\packages\\spectre.console\\0.48.0\\spectre.console.0.48.0.nupkg.sha512",
     "C:\\Users\\DHINESH\\.nuget\\packages\\spectre.console.cli\\0.48.0\\spectre.console.cli.0.48.0.nupkg.sha512",
     "C:\\Users\\DHINESH\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",

@@ -5,6 +5,10 @@ using Newtonsoft.Json;
 using MySql.Data.MySqlClient;
 using Mysqlx.Crud;
 using Spectre.Console;
+using ZstdSharp;
+using ICSharpCode.SharpZipLib.Zip;
+using System.Net.Mail;
+using System.Net;
 class testFunction
 {
 
@@ -217,7 +221,6 @@ class testFunction
         Console.WriteLine("Error: " + ex.Message);
     }
 }
-
     public static void readFromDb()
 {
     MySqlConnection mySqlConnection;
@@ -348,6 +351,49 @@ class testFunction
     public static void spectre()
     {
         AnsiConsole.Markup("[underline red]Hello[/] World!");
+    }
+    public static void sharpzip()
+    {
+        string filepath = @"D:\DOT_NET\github\myconsoleapp\myconsoleApp\myjson.json";
+        string zipfilepath = @"D:\DOT_NET\github\myconsoleapp\myconsoleApp\myjson.zip";
+
+        using (var zipstream = new ZipOutputStream(File.Create(zipfilepath)))
+        {
+            zipstream.SetLevel(5);
+            ZipEntry zipEntry = new ZipEntry(Path.GetFileName(filepath));
+            zipstream.PutNextEntry(zipEntry);
+            using(var filestream = File.OpenRead(filepath))
+            {
+                byte[] buffer = new byte[4096];
+                int byteread;
+                while((byteread = filestream.Read(buffer,0,buffer.Length))>0)
+                {
+                    zipstream.Write(buffer,0,byteread);
+                }
+            }
+            zipstream.CloseEntry();
+        }
+    }
+    public static void sendmail()
+    {
+        string frommail = "dhinesh14301@gmail.com";
+        string password = "zzll paew nmiu lhyb";
+
+        MailMessage mailMessage = new MailMessage();
+        mailMessage.From = new MailAddress(frommail);
+        mailMessage.Subject = "test subject";
+        mailMessage.To.Add(new MailAddress("dhin18124.me@rmkec.ac.in"));
+        mailMessage.Body = "<html><body>test</body></html>";
+        mailMessage.IsBodyHtml = true;
+
+        var smtp = new SmtpClient("smtp.gmail.com")
+        {
+            Port = 587,
+            Credentials = new NetworkCredential(frommail,password),
+            EnableSsl = true
+        };
+        smtp.Send(mailMessage);
+
     }
 #endregion
 }
